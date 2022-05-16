@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>MCQ</title>
+		<link rel="manifest" href="/manifest.json">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="images/hello-icon-152.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="white"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Hello World">
+		<meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+	</head>
+	<body>
+		<div>
+			<select id="qGroup" style="width:100%;">
+				<option value="java">Java</option>
+				<option value="spring">Spring</option>
+			</select>
+			<div class="question" id="question" style="white-space: pre-wrap;"></div>
+			<div class="answers" id="answers" ></div>
+			<button class="button" id="submit">Submit</button>
+			<button class="button" id="next">Next</button>
+			<div id="explanation"></div>
+		</div>		
+		<script src="/js/jquery-3.4.1.min.js"></script>
+		<script async src="/js/java.json"></script>
+		<script async src="/js/spring.json"></script>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
